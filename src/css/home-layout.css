@@ -1,99 +1,88 @@
-
-nav{
-    /*background: #22dddd;*/
-    grid-area: nav;
+nav {
+  /*background: #22dddd;*/
+  grid-area: nav;
 }
 
-#logo{
-        /*background: #414444;*/
-        grid-area: logo;
+#logo {
+  /*background: #414444;*/
+  grid-area: logo;
 }
 
 #title {
-    /*background: #82cfcf;*/
-    grid-area: title;
+  /*background: #82cfcf;*/
+  grid-area: title;
 }
 
 #search {
-    /*background: #bedada;*/
-    grid-area: search;
+  /*background: #bedada;*/
+  grid-area: search;
 }
 
 #principal {
-    /*background: #7dcaca;*/
-    grid-area: principal;
+  /*background: #7dcaca;*/
+  grid-area: principal;
 }
 
 #side-new-1 {
-    /*background: #818d8d;*/
-    grid-area: side-new-1;
+  /*background: #818d8d;*/
+  grid-area: side-new-1;
 }
 
 #side-new-2 {
-    /*background: #656868;*/
-    grid-area: side-new-2;
+  /*background: #656868;*/
+  grid-area: side-new-2;
 }
 
-footer{
-        background: #DC3E56;
-        grid-area: footer;
-        display: flex;
+footer {
+  grid-area: footer;
+  display: flex;
 }
-
 
 /*Desktop layout (default)*/
 .container {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 0.8fr 1.6fr 0.8fr;
-    grid-template-rows: 0.2fr 0.2fr 1.2fr 1.2fr 0.2fr;
-    grid-template-areas:
-        "logo title search"
-        "nav nav nav"
-        "principal principal side-new-1"
-        "principal principal side-new-2"
-        "footer footer footer"
-    ;
-    grid-gap: 0.2em;
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 0.4fr 1fr 0.5fr;
+  grid-template-rows: 0.2fr 0.1fr 1.2fr 1.2fr 0.2fr;
+  grid-template-areas:
+    "logo title search"
+    "nav nav nav"
+    "principal principal side-new-1"
+    "principal principal side-new-2"
+    "footer footer footer";
+  grid-gap: 0.2em;
 }
-
 
 /*Tablet layout*/
 @media only screen and (max-width: 990px) {
-
-    .container {
-        grid-template-columns: 0.8fr 1.6fr 0.8fr;
-        grid-template-rows: 0.2fr 0.2fr 1.6fr 0.8fr 0.8fr 0.2fr;
-        grid-template-areas:
-            "logo title search"
-            "nav nav nav"
-            "principal principal principal"
-            "side-new-1 side-new-1 side-new-1"
-            "side-new-2 side-new-2 side-new-2"
-            "footer footer footer"
-        ;
-    }
-
+  .container {
+    grid-template-columns: 0.8fr 1.6fr 0.8fr;
+    grid-template-rows: 0.1fr 0.1fr 1.2fr 0.8fr 0.8fr 0.2fr;
+    grid-template-areas:
+      "logo title search"
+      "nav nav nav"
+      "principal principal principal"
+      "side-new-1 side-new-1 side-new-1"
+      "side-new-2 side-new-2 side-new-2"
+      "footer footer footer";
+  }
 }
 
 /*Mobile layout*/
 @media only screen and (max-width: 550px) {
-
-    .container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.4fr 0.2fr 0.4fr 1.2fr 0.8fr 0.8fr 0.2fr;
-        grid-template-areas: 
-        "logo"
-        "title"
-        "search"
-        "nav"
-        "principal"
-        "side-new-1"
-        "side-new-2"
-        "footer"
-        ;
-    }
-    
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 1.2fr 0.8fr 0.8fr 0.2fr;
+    grid-template-areas:
+      "logo"
+      "title"
+      "search"
+      "nav"
+      "principal"
+      "side-new-1"
+      "side-new-2"
+      "footer";
+  }
 }
 
 /*Responsive media*/
@@ -101,5 +90,5 @@ img,
 embed,
 object,
 video {
-    max-width: 100%;
+  max-width: 100%;
 }
