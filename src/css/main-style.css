@@ -19,8 +19,14 @@ body {
 
 #search {
   margin-top: 1em;
-  text-align: center;
   margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+#search form {
+  display: flex;
+  align-items: center;
 }
 
 /* navbar style */
@@ -73,7 +79,24 @@ li a:hover {
 }
 
 /*side style */
+#side-new-1 {
+  color: white;
+  text-decoration: none;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+#side-new-2 {
+  color: white;
+  text-decoration: none;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
 #side-new-1 a {
+  color: white;
+  text-decoration: none;
+}
+#side-new-2 a {
   color: white;
   text-decoration: none;
 }
@@ -82,4 +105,21 @@ footer {
   margin-left: 1em;
   margin-right: 1em;
   background: #dc3e56;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* personajes */
+#principal ul {
+  background-color: #0c111f;
+}
+
+#principal ul li {
+  margin-top: 2em;
+}
+
+#principal ul li h2 {
+  margin-bottom: 2em;
 }

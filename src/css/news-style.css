@@ -1,0 +1,17 @@
+#principal {
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+#principal h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#principal h2 {
+  text-align: center;
+}
+
+#principal p {
+  margin-inline: 10em;
+}
