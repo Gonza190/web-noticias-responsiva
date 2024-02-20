@@ -1,6 +1,6 @@
 #principal {
-  margin-left: 5em;
-  margin-right: 5em;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 #principal h1 {
@@ -13,5 +13,34 @@
 }
 
 #principal p {
-  margin-inline: 10em;
+  margin-inline: 1em;
+}
+
+/*So side news are separated from navbar */
+#side-new-1 {
+  margin-top: 5em;
+}
+
+/*Img floats near the text of the new */
+#principal p img {
+  float: left;
+  max-width: 50%;
+  display: block;
+  margin: 1em;
+}
+
+/*For tablet and mobile view */
+@media only screen and (max-width: 990px) {
+  /*Img on center on tablet and phone*/
+  #principal p img {
+    float: none;
+    max-width: 100%;
+    margin: 0em;
+  }
+
+  /*No need for 5em to separate it from navbar, 
+  as they are now under the text of the new  */
+  #side-new-1 {
+    margin-top: 1em;
+  }
 }
