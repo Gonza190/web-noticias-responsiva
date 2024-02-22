@@ -1,35 +1,28 @@
 nav {
-  /*background: #22dddd;*/
   grid-area: nav;
 }
 
 #logo {
-  /*background: #414444;*/
   grid-area: logo;
 }
 
 #title {
-  /*background: #82cfcf;*/
   grid-area: title;
 }
 
 #search {
-  /*background: #bedada;*/
   grid-area: search;
 }
 
 #principal {
-  /*background: #7dcaca;*/
   grid-area: principal;
 }
 
 #side-new-1 {
-  /*background: #818d8d;*/
   grid-area: side-new-1;
 }
 
 #side-new-2 {
-  /*background: #656868;*/
   grid-area: side-new-2;
 }
 
